@@ -1,0 +1,701 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,200;1,600;1,700;1,800&display=swap");
+//pages+nav and footer
+@media (min-width: 1904px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+.nav_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  .nav_logo {
+  }
+  .nav_headers {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    gap: 50px;
+    .header_line {
+    }
+  }
+  .search_container {
+  }
+  .nicon_group {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    .nav_icon {
+    }
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  .left_foot {
+    .leftfot_container {
+      .leftft_title {
+      }
+      .ft_subclmns {
+        .left_subtitle {
+        }
+      }
+    }
+  }
+  .right_foot {
+    display: flex;
+    flex-direction: column;
+    .icon_group {
+    }
+    .right_local {
+      display: flex;
+      flex-direction: row;
+      .local_icon {
+      }
+      .placment {
+      }
+    }
+    .copyright {
+    }
+  }
+}
+.home {
+  .banner_container {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 1);
+    .banner_text {
+    }
+  }
+  .home_hero {
+    display: flex;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    .home_heromg {
+      height: 400px;
+      width: -webkit-fill-available;
+      position: relative;
+    }
+    .homeHero_header {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(222, 222, 222, 0.7);
+      width: 759px;
+      height: 250px;
+      margin-bottom: 50px;
+      position: absolute;
+      gap: 20px;
+      border-radius: 10px 10px;
+      padding-left: 40px;
+
+      .homeHero_title {
+        color: #1b4b66;
+        font-family: Inter;
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 84px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .homeHero_sub {
+        color: #1b4b66;
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .hero_btn {
+        width: 120px;
+        text-align: center;
+        background-color: #1b4b66;
+        color: white;
+        border-radius: 10px;
+        //styleName: Paragraph/M-16px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .homeSection_one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .sectionOne_header {
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+      justify-content: space-between;
+      .section_title {
+        //styleName: Heading/S-34px;
+        font-family: Inter;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .titleBtn_holder {
+        .title_btn {
+        }
+      }
+    }
+    .homecardOne_container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+    }
+  }
+  .homeSection_two {
+    background-color: #1b4b66;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .sectionTwo_title {
+      .sectionTitle_txt {
+        color: white;
+        font-family: Inter;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+    .cardTwo_container {
+      background-color: #1b4b66;
+    }
+  }
+  .homeSection_three {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .secThree_titlecn {
+      //styleName: Heading/S-34px;
+      font-family: Inter;
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 44px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .cardThree_container {
+    }
+  }
+  .homeSection_four {
+    display: flex;
+    flex-direction: column;
+    .sectionPart {
+      .fourImage_container {
+        .home_img {
+          height: 400px;
+          width: 1240px;
+          border-radius: 15px;
+          .sectionFour_txtHolder {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 618px;
+            height: 100%;
+            padding-left: 60px;
+
+            color: #97451f;
+            .fourTxt_title {
+              font-family: Inter;
+              font-size: 30px;
+              font-weight: 400;
+              line-height: 20px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+            .fourTxt_subtitle {
+              font-family: Inter;
+              font-size: 52px;
+              font-weight: 700;
+              line-height: 68px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    .cardFour_container {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  .category_Hero {
+    .categoryImage_container {
+      .catHero_img {
+      }
+    }
+    .categoryHero_txt {
+      .catHero_header {
+      }
+      .catHero_subHeader {
+      }
+    }
+  }
+  .category_bread {
+  }
+  .category_headContainer {
+  }
+  .category_section {
+    display: flex;
+    flex-direction: row;
+    .category_filterContainer {
+    }
+    .category_listContainer {
+      .category_pagination {
+      }
+      .sub {
+        text-align: center;
+      }
+    }
+  }
+}
+.product {
+  .bread {
+  }
+  .product_sectionOne {
+    .display_container {
+    }
+    .characteristic_container {
+      .characteristic_upSection {
+        .characteristic_header {
+        }
+        .characteristic_subHeader {
+        }
+        .characteristic_ratingGrp {
+        }
+        .characteristic_priceHolder {
+          .chOld_price {
+          }
+          .chNew_price {
+          }
+          .chDiscount {
+          }
+        }
+      }
+      .characteristic_DQ {
+        .ch_delivery {
+          .ch_deliveryTxt {
+            .ch_deliveryTitle {
+            }
+            .ch_deliverySubtitle {
+            }
+          }
+          .ch_deliveryBtnGrp {
+            .ch_deliveryInp {
+            }
+            .ch_deliveryBtn {
+            }
+          }
+        }
+        .ch_quantity {
+        }
+      }
+      .characteristic_coponHolder {
+        .characteristic_Copon {
+        }
+        .copon_details {
+        }
+        .copon_btn {
+        }
+      }
+      .characteristic_buttonGroup {
+        .chBtn_one {
+        }
+        .chBtn_two {
+        }
+      }
+    }
+  }
+  .product_sectionTwo {
+    .tabCard_container {
+    }
+  }
+}
+
+.about {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 50px;
+  font-family: "Inter", sans-serif;
+
+  .about_hero {
+    display: flex;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    align-items: flex-end;
+    justify-content: flex-end;
+    .about_heromg {
+      height: 600px;
+      width: -webkit-fill-available;
+      position: relative;
+    }
+    .abh_header {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 345px;
+      height: 200px;
+      margin-right: 300px;
+
+      .abhero_title {
+        font-family: Inter;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 61px;
+        letter-spacing: 4.545454025268555px;
+        text-align: left;
+      }
+      .abhero_sub {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    }
+  }
+  .centered_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .centered_title {
+      //styleName: Heading/S-20px;
+      font-family: Inter;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .centered_description {
+      width: 550px;
+      display: flex;
+      text-align: center;
+      //styleName: Paragraph/R-16px;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+  .about_section {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    .aboutSection_txt {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      .abtxt_title {
+        //styleName: Heading/S-20px;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .abtxt_description {
+        text-align: start;
+        //styleName: Paragraph/R-16px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+      }
+    }
+  }
+  .aboutSection_img {
+    .abtsec_img {
+      height: 350px;
+      width: 710px;
+      border-radius: 15px;
+      box-shadow: 1px 1px 6px 4px rgb(0 0 0 / 30%);
+    }
+  }
+}
+.myCart {
+  .bread {
+  }
+  .mC_container {
+    .mCsection_one {
+      .mCso_table {
+        .mCsoTitle_head {
+        }
+        .midTitle_holder {
+          .mCsoTitle {
+          }
+        }
+      }
+      .mCsoComponent_container {
+      }
+      .mCsoSub_header {
+      }
+      .mCso_btnGrp {
+        .mCso_input {
+        }
+        .mCso_btn {
+        }
+      }
+    }
+    .mCsection_two {
+      .mCst_header {
+      }
+      .mCst_details {
+        .mCst_detailsTxt {
+        }
+        .mCst_detailsNum {
+        }
+      }
+      .mCst_btnGrp {
+        .mCst_btnOne {
+        }
+        .mCst_btnTwo {
+        }
+      }
+    }
+  }
+}
+.userProfile {
+  .bread {
+  }
+  .userTitle_holder {
+    .user_title {
+    }
+    .user_btn {
+    }
+  }
+  .userContainer {
+  }
+  .userP_btn {
+  }
+}
+
+//components
+.newArrival {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  .newArrival_imgContainer {
+    .newArrival_img {
+      width: 286px;
+      height: 286px;
+      border-radius: 15px;
+    }
+  }
+  .newArrival_textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .newArrival_header {
+      display: flex;
+      flex-direction: row;
+      width: 280px;
+      justify-content: space-between;
+      .nA_headertxt {
+        //styleName: Paragraph/M-16px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .nA_headerIconHolder {
+      }
+    }
+    .newArrival_subtitle {
+      //styleName: Paragraph/R-14px;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .newArrival_price {
+      //styleName: Paragraph/M-16px;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+}
+.handPicked {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  .handPicked_imgHolder {
+    display: flex;
+    .handPicked_img {
+      width: 280px;
+      height: 280px;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      .handPicked_title {
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+}
+.brands {
+  .brands_logoHolder {
+    height: 168px;
+    width: 168px;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .brands_logo {
+      height: 50px;
+      width: 110px;
+      background-color: #f4f4f4 !important;
+    }
+  }
+}
+.skinCare {
+  display: flex;
+  flex-direction: column;
+
+  .skinCare_imgHolder {
+    .skinCare_img {
+      width: 604px;
+      height: 228px;
+      border-radius: 15px;
+      position: relative;
+      .skinCareTxt_holder {
+        display: flex;
+        flex-direction: column;
+        width: 228px;
+        align-items: flex-end;
+        margin-left: auto;
+        height: 100%;
+        padding: 10px;
+        .skinCare_txt {
+          color: #a53f64;
+          font-family: Inter;
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 52px;
+          letter-spacing: 0em;
+          text-align: right;
+        }
+        .skinCare_btnholder {
+          .skinCare_btn {
+          }
+        }
+      }
+    }
+  }
+}
+.categoryDisplay {
+  .displayFilter {
+  }
+  .displayComponent_container {
+    .displayComponent {
+      .displayComponent_imgHolder {
+        .displayComponent_img {
+        }
+      }
+      .displayComponent_txtSection {
+        .displayComponent_header {
+          .dcpHeader_txt {
+          }
+          .dcpHeader_icon {
+          }
+        }
+        .displayComponent_subtitle {
+        }
+        .displayComponent_ratingGrp {
+          .dcpRating_star {
+          }
+          .dcpRating_count {
+          }
+        }
+        .displayComponent_price {
+          .dcp_price {
+          }
+          .dcp_oldPrice {
+          }
+          .dcp_discount {
+          }
+        }
+      }
+    }
+  }
+}
+.myCartComponent {
+  .mCc_sectionOne {
+    .mCcImg_holder {
+      .mCc_img {
+      }
+    }
+    .mCcSecOne_txt {
+      .mCc_title {
+      }
+      .mCc_subtitle {
+      }
+      .mCc_subhead {
+      }
+    }
+  }
+  .mCc_sectionTwo {
+    .mCcst_txtGrp {
+      .mCcst_title {
+      }
+    }
+    .mCcst_btnGrp {
+      .mCcst_btnOne {
+      }
+      .mCcst_btnTwo {
+      }
+    }
+  }
+}
+.userProfileComponent {
+}
