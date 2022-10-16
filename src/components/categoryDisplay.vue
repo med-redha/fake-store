@@ -1,8 +1,8 @@
 <template>
-    <div class="categoryDisplay">
-        <div class="displayFilter"></div>
-        <div class="displayComponent_container">
-            <div class="displayComponent" :display="display">
+    <div class="categoryDisplay" >
+        
+        <div class="displayComponent_container" :display="display">
+            <div class="displayComponent" >
                 <div class="displayComponent_imgHolder">
                     <img class="displayComponent_img" :src="display.img " alt="">
                 </div>
@@ -13,7 +13,7 @@
                     </div>
                     <div class="displayComponent_subtitle">{{ display.subtitle }} </div>
                     <div class="displayComponent_ratingGrp">
-                        <v-icon class="dcpRating_star">{{ display.star }} </v-icon>
+                        <v-icon class="dcpRating_star" v-for="i in 4" :key="i">{{ display.star }} </v-icon>
                         <div class="dcpRating_count">{{ display.rate }} </div>
                     </div>
                     <div class="displayComponent_price">
@@ -31,7 +31,7 @@
 export default {
     name:'categoryDisplay',
     props:{
-        display: Array,
+        display: Object,
         
     }
 
