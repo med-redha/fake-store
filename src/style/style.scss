@@ -292,45 +292,194 @@
     text-align: left;
     color: #1b4b66;
   }
-  .category_section {
+  .category_filterContainer {
     display: flex;
-    flex-direction: row;
-    gap: 120px;
-    .category_filterContainer {
+  }
+  .category_listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .displayFilter {
       display: flex;
-      width: 50px;
-    }
-    .category_listContainer {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      .displayFilter {
+      justify-content: space-between;
+      .df_lineTxt {
+        //styleName: Paragraph/M-16px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      .df_lineOne {
         display: flex;
-        justify-content: space-between;
-        width: 1044px;
-        .df_lineTxt {
+        align-items: center;
+      }
+      .df_lineTwo {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        .df_lineInput {
+          text-align: center;
+          height: 56px;
+          width: 58px;
+          border-radius: 6px;
+          background-color: #f1f1f1;
           //styleName: Paragraph/M-16px;
           font-family: Inter;
           font-size: 16px;
           font-weight: 500;
           line-height: 20px;
           letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+      .df_lineThree {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+    .category_pagination {
+    }
+    .sub {
+      text-align: center;
+    }
+  }
+}
+.product {
+  .bread {
+  }
+
+  .display_container {
+    .productDisplay_mainHolder {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .productDisplay_mainImg {
+        width: 600px;
+        height: 600px;
+        border-radius: 15px;
+      }
+      .slot {
+        display: flex;
+        align-items: center;
+        .slt {
+          height: 60px;
+          width: 60px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  .characteristic_container {
+    .characteristic_upSection {
+      .characteristic_header {
+        //styleName: Heading/S-34px;
+        font-family: Inter;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .characteristic_subHeader {
+        //styleName: Heading/S-20px;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #626262;
+      }
+      .characteristic_ratingGrp {
+        display: flex;
+        align-items: center;
+        .strs {
+          width: 24px;
+          height: 24px;
+        }
+        .rates {
+          //styleName: Paragraph/R-16px;
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #b6b6b6;
+        }
+      }
+      .characteristic_priceHolder {
+        display: flex;
+        align-items: center;
+        .chOld_price {
+          color: #b6b6b6;
+          font-family: Inter;
+          font-size: 34px;
+          font-weight: 600;
+          line-height: 26px;
+          letter-spacing: 0em;
+          text-align: right;
+        }
+        .chNew_price {
+          //styleName: Heading/B-52px;
+          font-family: Inter;
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 52px;
+          letter-spacing: 0em;
           text-align: left;
         }
-
-        .df_lineOne {
-          display: flex;
-          align-items: center;
+        .chDiscount {
+          //styleName: Heading/S-20px;
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 26px;
+          letter-spacing: 0em;
+          text-align: right;
+          color: #97451f;
         }
-        .df_lineTwo {
+      }
+    }
+    .characteristic_DQ {
+      .ch_delivery {
+        display: flex;
+        .ch_deliveryTxt {
           display: flex;
-          gap: 10px;
+          flex-direction: column;
+          gap: 20px;
+          .ch_deliveryTitle {
+            //styleName: Heading/S-20px;
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          .ch_deliverySubtitle {
+            //styleName: Paragraph/M-16px;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #626262;
+          }
+        }
+        .ch_deliveryBtnGrp {
+          display: flex;
           align-items: center;
-          .df_lineInput {
-            text-align: center;
-            height: 56px;
-            width: 58px;
-            border-radius: 6px;
+          .ch_deliveryInp {
+            padding-left: 10px;
+            text-align: start;
+            width: 250px;
+            height: 52px;
             background-color: #f1f1f1;
             //styleName: Paragraph/M-16px;
             font-family: Inter;
@@ -338,82 +487,145 @@
             font-weight: 500;
             line-height: 20px;
             letter-spacing: 0em;
+            text-align: left;
+            color: #626262;
+          }
+          .ch_deliveryBtn {
+            height: 52px;
+            background-color: #f1f1f1;
+            color: #626262;
+          }
+        }
+      }
+      .ch_quantity {
+        display: flex;
+        align-items: center;
+        .Q_tx {
+          //styleName: Heading/S-20px;
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 26px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        .Q_tri {
+          display: flex;
+          align-items: center;
+          width: 120px;
+          border-radius: 4px;
+          border: 1px solid black;
+          .Q_inp {
+            width: 25px;
+            height: 24px;
             text-align: center;
           }
+          .Q-btn {
+            border-right: 1px solid black;
+            background-color: #ffff;
+            .Q_icn {
+              padding: -2px;
+            }
+          }
         }
-        .df_lineThree {
+      }
+    }
+    .characteristic_coponHolder {
+      display: flex;
+      flex-direction: column;
+      .copns {
+        display: flex;
+        border: 1px solid black;
+        border-radius: 8px;
+        width: 396px;
+        height: 96px;
+        .characteristic_Copon {
           display: flex;
-          gap: 10px;
           align-items: center;
         }
-      }
-      .category_pagination {
-      }
-      .sub {
-        text-align: center;
-      }
-    }
-  }
-}
-.product {
-  .bread {
-  }
-  .product_sectionOne {
-    .display_container {
-    }
-    .characteristic_container {
-      .characteristic_upSection {
-        .characteristic_header {
-        }
-        .characteristic_subHeader {
-        }
-        .characteristic_ratingGrp {
-        }
-        .characteristic_priceHolder {
-          .chOld_price {
-          }
-          .chNew_price {
-          }
-          .chDiscount {
-          }
-        }
-      }
-      .characteristic_DQ {
-        .ch_delivery {
-          .ch_deliveryTxt {
-            .ch_deliveryTitle {
-            }
-            .ch_deliverySubtitle {
-            }
-          }
-          .ch_deliveryBtnGrp {
-            .ch_deliveryInp {
-            }
-            .ch_deliveryBtn {
-            }
-          }
-        }
-        .ch_quantity {
-        }
-      }
-      .characteristic_coponHolder {
-        .characteristic_Copon {
-        }
         .copon_details {
+          .cp_title {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          .cp_subtitle {
+            color: #1b4b66;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 13px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
         }
         .copon_btn {
+          display: flex;
+          flex-direction: column;
+          width: 109px;
+          height: 66px;
+          margin-top: 20px;
+          background-color: #f1f1f1;
+          align-items: center;
+          padding: 10px;
+          border-radius: 15px;
+          .cpb_title {
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 13px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #626262;
+          }
+          .cpb_subtitle {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
         }
       }
       .characteristic_buttonGroup {
+        display: flex;
         .chBtn_one {
+          .v-btn__content{
+            color: white;
+          height: 44px;
+
+          }
+          background-color: #1b4b66;
+          border-radius: 12px;
+          color: white;
+          
         }
         .chBtn_two {
+          height: 44px;
+          width: 240px;
+          border-radius: 12px;
         }
       }
     }
   }
+
   .product_sectionTwo {
+    display: flex;
+    gap: 30px;
     .tabCard_container {
+      display: flex;
+      gap: 20px;
+      .pSection_two {
+        display: flex;
+        flex-direction: column;
+        .raduis {
+          border-radius: 12px;
+        }
+      }
     }
   }
 }
@@ -715,45 +927,83 @@
     }
   }
 }
-.categoryDisplay {
+
+.displayComponent_container {
   display: flex;
   flex-direction: column;
-  .displayComponent_container {
+  .displayComponent {
     display: flex;
-    .displayComponent {
+    flex-direction: column;
+    gap: 20px;
+    .displayComponent_imgHolder {
+      .displayComponent_img {
+        width: 286px;
+        height: 286px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+      }
+    }
+    .displayComponent_txtSection {
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      .displayComponent_imgHolder {
-        .displayComponent_img {
-          width: 286px;
-          height: 286px;
-          border-radius: 15px;
-          box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+      gap: 10px;
+
+      .displayComponent_header {
+        display: flex;
+        justify-content: space-between;
+        .dcpHeader_txt {
+          //styleName: Paragraph/M-16px;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        .dcpHeader_icon {
         }
       }
-      .displayComponent_txtSection {
+      .displayComponent_subtitle {
+        //styleName: Paragraph/R-14px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #626262;
+      }
+      .displayComponent_ratingGrp {
         display: flex;
-        flex-direction: column;
-        gap: 10px;
-
-        .displayComponent_header {
-          display: flex;
-          justify-content: space-between;
-          .dcpHeader_txt {
-            //styleName: Paragraph/M-16px;
-            font-family: Inter;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 20px;
-            letter-spacing: 0em;
-            text-align: left;
-          }
-          .dcpHeader_icon {
-          }
+        align-items: center;
+        justify-content: stretch;
+        .dcpRating_star {
+          color: gold;
         }
-        .displayComponent_subtitle {
-          //styleName: Paragraph/R-14px;
+        .dcpRating_count {
+          margin-left: 25px;
+          //styleName: Heading/M-14px;
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+      .displayComponent_price {
+        display: flex;
+        gap: 10px;
+        .dcp_price {
+          //styleName: Paragraph/M-16px;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        .dcp_oldPrice {
           font-family: Inter;
           font-size: 14px;
           font-weight: 400;
@@ -762,55 +1012,15 @@
           text-align: left;
           color: #626262;
         }
-        .displayComponent_ratingGrp {
-          display: flex;
-          align-items: center;
-          justify-content: stretch;
-          .dcpRating_star {
-            color: gold;
-          }
-          .dcpRating_count {
-            margin-left: 25px;
-            //styleName: Heading/M-14px;
-            font-family: Inter;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 18px;
-            letter-spacing: 0em;
-            text-align: left;
-          }
-        }
-        .displayComponent_price {
-          display: flex;
-          gap: 10px;
-          .dcp_price {
-            //styleName: Paragraph/M-16px;
-            font-family: Inter;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 20px;
-            letter-spacing: 0em;
-            text-align: left;
-          }
-          .dcp_oldPrice {
-            font-family: Inter;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 20px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #626262;
-          }
-          .dcp_discount {
-            //styleName: Paragraph/R-16px;
-            font-family: Inter;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 20px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #e21d1d;
-          }
+        .dcp_discount {
+          //styleName: Paragraph/R-16px;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #e21d1d;
         }
       }
     }
