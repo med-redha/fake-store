@@ -33,25 +33,25 @@
       </v-col>
       <v-col>
         <div class="characteristic_container my-4">
-          <div class="characteristic_upSection">
+          <div class="characteristic_upSection ml-4">
             <div class="characteristic_header">Coach</div>
             <div class="characteristic_subHeader my-4">
               Leather Coach Bag with adjustable starps.
             </div>
-            <div class="characteristic_ratingGrp my-4">
+            <div class="characteristic_ratingGrp my-4 ">
               <v-icon v-for="i in 5" :key="i" color="yellow" class="strs"
                 >mdi-star</v-icon
               >
               <div class="rates ml-2">(250) Ratings</div>
             </div>
-            <div class="characteristic_priceHolder">
+            <div class="characteristic_priceHolder ml-3">
               <div class="chNew_price mr-2">$54.69</div>
               <div class="chOld_price mr-2">$78.66</div>
               <div class="chDiscount">50%OFF</div>
             </div>
             <v-divider></v-divider>
           </div>
-          <div class="characteristic_DQ my-6">
+          <div class="characteristic_DQ my-6 ml-4">
             <div class="ch_delivery">
               <div class="ch_deliveryTxt">
                 <div class="ch_deliveryTitle">Delivery Details</div>
@@ -68,7 +68,7 @@
                 <v-btn class="ch_deliveryBtn" text>check</v-btn>
               </div>
             </div>
-            <div class="ch_quantity my-10">
+            <div class="ch_quantity my-10 ml-2">
               <div class="Q_tx mr-2">Qantity:</div>
               <div class="Q_tri">
                 <v-btn min-width="24px" icon>
@@ -81,7 +81,7 @@
               </div>
             </div>
           </div>
-          <div class="characteristic_coponHolder my-10">
+          <div class="characteristic_coponHolder my-10 ml-5">
             <div class="copns">
               <div class="characteristic_Copon">
                 <div class="copon_details pl-2">
@@ -97,7 +97,7 @@
               </div>
             </div>
           </div>
-          <div class="characteristic_buttonGroup my-12 ml-4">
+          <div class="characteristic_buttonGroup my-12 ">
             <v-btn
               class="chBtn_one mx-6"
               dark
@@ -109,9 +109,8 @@
               <v-icon color="white">mdi-basket-check-outline</v-icon>
               <span class="v-btn__content">Add to bag</span>
             </v-btn>
-            
+
             <v-btn
-            
               class="chBtn_two"
               outlined
               depressed
