@@ -16,7 +16,7 @@
     </div>
     <div class="about_section">
       <div class="aboutSection_txt">
-        <div class="abtxt_title">About</div>
+        <div class="abtxt_title ">About</div>
         <div class="abtxt_description">Lorem Ipsum is simply dummy text of the printing. Lorem Ipsum is simply dummy text of the printing. Lorem
           Ipsum is simply dummy text of the printing. Lorem Ipsum is simply dummy text of the printing. Lorem Ipsum is
           simply dummy text of the printing. Lorem Ipsum is simply dummy text of the printing. </div>
