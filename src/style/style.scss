@@ -594,15 +594,13 @@
       .characteristic_buttonGroup {
         display: flex;
         .chBtn_one {
-          .v-btn__content{
+          .v-btn__content {
             color: white;
-          height: 44px;
-
+            height: 44px;
           }
           background-color: #1b4b66;
           border-radius: 12px;
           color: white;
-          
         }
         .chBtn_two {
           height: 44px;
@@ -709,6 +707,7 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
+      
       .abtxt_title {
         //styleName: Heading/S-20px;
         font-family: Inter;
@@ -741,17 +740,59 @@
 .myCart {
   .bread {
   }
+  .cart_name {
+    color: #1b4b66;
+    //styleName: Heading/S-34px;
+    font-family: Inter;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
   .mC_container {
+    display: flex;
     .mCsection_one {
+      display: flex;
+      flex-direction: column;
       .mCso_table {
+        display: flex;
+        justify-content: space-between;
         .mCsoTitle_head {
+          display: flex;
+          text-align: start;
+          color: #626262;
+          //styleName: Paragraph/M-16px;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
         }
         .midTitle_holder {
+          width: 355px;
+          display: flex;
+          justify-content: space-between;
           .mCsoTitle {
+            //styleName: Paragraph/M-16px;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #626262;
           }
         }
       }
       .mCsoComponent_container {
+        display: flex;
+        justify-content: space-between;
+        .componentOne {
+        }
+        .componentTwo {
+        }
       }
       .mCsoSub_header {
       }
@@ -1027,29 +1068,104 @@
   }
 }
 .myCartComponent {
+  display: flex;
   .mCc_sectionOne {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     .mCcImg_holder {
       .mCc_img {
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
       }
     }
     .mCcSecOne_txt {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
       .mCc_title {
+        //styleName: Paragraph/M-16px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
       }
       .mCc_subtitle {
+        color: #626262;
+        //styleName: Paragraph/R-16px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
       }
       .mCc_subhead {
+        color: #626262;
+        //styleName: Paragraph/R-16px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
       }
     }
   }
-  .mCc_sectionTwo {
-    .mCcst_txtGrp {
-      .mCcst_title {
+}
+.mCartSecComponent {
+  display: flex;
+  flex-direction: column;
+  .mCcst_txtGrp {
+    display: flex;
+    width: 355px;
+    justify-content: space-between;
+    align-items: center;
+
+    .mCcst_titlOne {
+      //styleName: Paragraph/R-14px;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .mCcst_titlTwo {
+      //styleName: Paragraph/R-14px;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .mCcst_titlThree {
+      //styleName: Paragraph/R-14px;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+  .mCcst_btnGrp {
+    .mCcst_btnOne {
+      .v-btn__content {
+        .txtOne {
+          color: #1b4b66;
+        }
       }
     }
-    .mCcst_btnGrp {
-      .mCcst_btnOne {
-      }
-      .mCcst_btnTwo {
+    .mCcst_btnTwo {
+      .v-btn__content {
+        .txtTwo {
+          color: #97451f;
+        }
       }
     }
   }
