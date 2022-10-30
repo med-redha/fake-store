@@ -6,8 +6,8 @@
         <div class="mCcst_titlThree">{{ sec.subtotal }}</div>
       </div>
       <div class="mCcst_btnGrp ml-2" >
-        <v-btn class="mCcst_btnOne" text ><span class="txtOne">{{ sec.btnOne }}</span></v-btn>
-        <v-btn class="mCcst_btnTwo" text><span class="txtTwo">{{  sec.btnTwo }}</span></v-btn>
+        <v-btn class="mCcst_btnOne" text  small><span class="txtOne">{{ sec.btnOne }}</span></v-btn>
+        <v-btn class="mCcst_btnTwo" text small><span class="txtTwo">{{  sec.btnTwo }}</span></v-btn>
       </div>
     </div>
 </template>
