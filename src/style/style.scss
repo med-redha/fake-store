@@ -707,7 +707,7 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      
+
       .abtxt_title {
         //styleName: Heading/S-20px;
         font-family: Inter;
@@ -795,45 +795,163 @@
         }
       }
       .mCsoSub_header {
+        .slct {
+          background-color: white;
+          color: black;
+        }
       }
+
       .mCso_btnGrp {
         .mCso_input {
+          background-color: #f1f1f1;
+          height: 56px;
+          width: 300px;
         }
         .mCso_btn {
+          background-color: #f1f1f1;
+          height: 56px;
+          width: 60px;
         }
       }
     }
     .mCsection_two {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
       .mCst_header {
+        display: flex;
+        .head_devide {
+          display: flex;
+          flex-direction: column;
+          width: 411px;
+          .header_txt {
+            //styleName: Heading/S-20px;
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
       }
       .mCst_details {
-        .mCst_detailsTxt {
+        width: 411px;
+        height: 273;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+          .mCst_detailsContainer{
+            width: 411px;
+            height: 273;
+            display: flex;
+            justify-content: space-between;
+            .mCst_detailsTxt {
+              //styleName: Paragraph/M-16px;
+              font-family: Inter;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 20px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: #626262;
+            }
+            .mCst_detailsNum {
+              font-family: Inter;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 18px;
+              letter-spacing: 0em;
+              text-align: right;
+              color: #171520;
+            }
+          }
+        
+      }
+      .Tot {
+        justify-content: space-between;
+        width: 411px;
+        .tot_txt {
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
         }
-        .mCst_detailsNum {
+        .tot_num {
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: right;
         }
       }
       .mCst_btnGrp {
         .mCst_btnOne {
+          width: 180px;
+          height: 40px;
+          color: #f1f1f1;
+          background-color: #1b4b66;
+          border-radius: 8px;
         }
         .mCst_btnTwo {
+          width: 180px;
+          height: 40xp;
+          color: #1b4b66;
+          border-radius: 8px;
         }
       }
     }
   }
 }
 .userProfile {
-  .bread {
+  .v-tabs-bar{
+    .tabs_side{
+    color: black;
   }
-  .userTitle_holder {
-    .user_title {
+  }
+  .tab_items{
+    .cards_Title{}
+
+  }
+  .ProfileImg_holder{
+    .profile_pic{
+
     }
-    .user_btn {
+    .ProfilePic_btnGrp{
+      .ProfilePic_btnOne{}
+      .ProfilePic_btnOne{}
+
     }
   }
-  .userContainer {
+  .infoSection{
+    .partONe_container{
+      .infoPart_one{
+        .infoTxt{
+
+        }
+        .inp_One{}
+        .inp_mail{}
+        .inp_ph{}
+
+      }
+
+    }
   }
-  .userP_btn {
+  .PartTWo_container{
+    .secnd_title{
+      .stitle_txt{}
+    }
+
   }
+  .save_holder{
+    .save_btn{}
+  }
+
+  
 }
 
 //components
@@ -1075,8 +1193,8 @@
     gap: 20px;
     .mCcImg_holder {
       .mCc_img {
-        width: 100px;
-        height: 100px;
+        width: 75px;
+        height: 80px;
         border-radius: 8px;
       }
     }
