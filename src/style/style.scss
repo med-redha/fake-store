@@ -842,32 +842,31 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-          .mCst_detailsContainer{
-            width: 411px;
-            height: 273;
-            display: flex;
-            justify-content: space-between;
-            .mCst_detailsTxt {
-              //styleName: Paragraph/M-16px;
-              font-family: Inter;
-              font-size: 16px;
-              font-weight: 500;
-              line-height: 20px;
-              letter-spacing: 0em;
-              text-align: left;
-              color: #626262;
-            }
-            .mCst_detailsNum {
-              font-family: Inter;
-              font-size: 16px;
-              font-weight: 500;
-              line-height: 18px;
-              letter-spacing: 0em;
-              text-align: right;
-              color: #171520;
-            }
+        .mCst_detailsContainer {
+          width: 411px;
+          height: 273;
+          display: flex;
+          justify-content: space-between;
+          .mCst_detailsTxt {
+            //styleName: Paragraph/M-16px;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #626262;
           }
-        
+          .mCst_detailsNum {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: right;
+            color: #171520;
+          }
+        }
       }
       .Tot {
         justify-content: space-between;
@@ -908,50 +907,216 @@
   }
 }
 .userProfile {
-  .v-tabs-bar{
-    .tabs_side{
-    color: black;
-  }
-  }
-  .tab_items{
-    .cards_Title{}
-
-  }
-  .ProfileImg_holder{
-    .profile_pic{
-
-    }
-    .ProfilePic_btnGrp{
-      .ProfilePic_btnOne{}
-      .ProfilePic_btnOne{}
-
+  .v-tabs-bar {
+    .tabs_side {
+      color: black;
     }
   }
-  .infoSection{
-    .partONe_container{
-      .infoPart_one{
-        .infoTxt{
-
+  .tab_items {
+    ::placeholder {
+      color: black;
+      //styleName: Paragraph/M-16px;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .cards_Title {
+      display: flex;
+      flex-direction: column;
+      .title_holder {
+        display: flex;
+        width: 874px;
+        align-items: center;
+        justify-content: space-between;
+        .title_txt {
+          //styleName: Heading/S-20px;
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 26px;
+          letter-spacing: 0em;
+          text-align: left;
         }
-        .inp_One{}
-        .inp_mail{}
-        .inp_ph{}
-
       }
-
+      .devider {
+        width: 874px;
+        border: 1px solid #0000001f;
+      }
     }
   }
-  .PartTWo_container{
-    .secnd_title{
-      .stitle_txt{}
+  .ProfileImg_holder {
+    display: flex;
+    max-width: 384px;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    .profile_pic {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
     }
-
+    .ProfilePic_btnGrp {
+      display: flex;
+      gap: 20px;
+      .ProfilePic_btnOne {
+        width: 136px;
+        height: 38px;
+        border-radius: 8px;
+        color: #1b4b66;
+        .imgBtn_txt {
+          color: #f1f1f1;
+        }
+      }
+      .ProfilePic_btnTwo {
+        width: 136px;
+        height: 38px;
+        border-radius: 8px;
+        border: 2px solid;
+        .imgBtn_txtTwo {
+          color: red;
+        }
+      }
+    }
   }
-  .save_holder{
-    .save_btn{}
+
+  .infoSection {
+    display: flex;
+    flex-direction: column;
+    .infoTxt {
+      //styleName: Paragraph/M-16px;
+      font-family: Inter;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .infoPart_MfD {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      .inp_mail {
+        background-color: #f1f1f1;
+        width: 604px;
+        height: 52px;
+        border-radius: 6px;
+        color: black;
+        padding: 8px;
+      }
+      .inp_ph {
+        width: 80px;
+        height: 56px;
+        background-color: #f1f1f1;
+        border-radius: 6px;
+        color: black;
+        padding: 4px;
+      }
+      .inp_pht {
+        background-color: #f1f1f1;
+        width: 287px;
+        height: 52px;
+        text-align: center;
+        border-radius: 6px;
+        color: black;
+        text-align: center;
+      }
+      .inp_phd {
+        background-color: #f1f1f1;
+        width: 287px;
+        height: 52px;
+        text-align: center;
+        border-radius: 4px;
+        color: black;
+        padding: 4px;
+      }
+    }
+    .partONe_container {
+      display: flex;
+      .infoPart_one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .inp_One {
+          background-color: #f1f1f1;
+          width: 287px;
+          height: 52px;
+          padding: 8px;
+          border-radius: 4px;
+        }
+      }
+    }
   }
 
-  
+  .PartTWo_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .secnd_title {
+      .stitle_txt {
+        //styleName: Heading/S-20px;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .devider {
+        width: 874px;
+        border: 1px solid #0000001f;
+      }
+    }
+    .infoPart_two {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .inp_two {
+        background-color: #f1f1f1;
+        width: 287px;
+        height: 52px;
+        text-align: start;
+        border-radius: 4px;
+        padding: 4px;
+        .inp_icn {
+          height: 56px;
+        }
+      }
+    }
+    .infoPart_twop {
+      display: flex;
+      align-items: center;
+      text-align: start;
+      .inp_two {
+        background-color: #f1f1f1;
+        width: 287px;
+        height: 52px;
+        border-radius: 4px;
+        padding: 3px;
+        .inp_icn {
+        }
+      }
+    }
+  }
+  .save_holder {
+    display: flex;
+    width: 800px;
+    justify-content: flex-end;
+    .save_btn {
+      justify-self: flex-end;
+      width: 136px;
+      height: 38px;
+      .save_btnTxt {
+        color: #f1f1f1;
+      }
+    }
+  }
 }
 
 //components
