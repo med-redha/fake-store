@@ -906,6 +906,88 @@
     }
   }
 }
+.checkOut {
+  ::placeholder {
+    color: black;
+  }
+  display: flex;
+  flex-direction: column;
+  .breadCrumbs {
+  }
+  .pageTitle {
+    color: #1b4b66;
+    //styleName: Heading/S-34px;
+    font-family: Inter;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .choSecOne {
+    .secO_partOne {
+      .details_holder {
+        display: flex;
+        .holder_pOne {
+          .holder_title {
+            //styleName: Paragraph/M-16px;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          .txtF_gnrl {
+            height: 56px;
+            width: 287px;
+            background-color: #f1f1f1;
+            padding: 6px;
+            border-radius: 4px;
+          }
+        }
+        .holder_pTwo {
+          .holder_title {
+            //styleName: Paragraph/M-16px;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          .txtF_grp {
+            .txtF_num {
+              background-color: #f1f1f1;
+              height: 56px;
+              width: 80px;
+              text-align: center;
+              border-radius: 4px;
+            }
+            .txtF_gnrl {
+              background-color: #f1f1f1;
+              height: 56px;
+              width: 287px;
+              padding: 6px;
+              margin-left: 6px;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+    .secO_partTwo {
+      display: flex;
+      flex-direction: column;
+      .secPartOne_btnGrp {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .choSecTwo {
+  }
+}
 .userProfile {
   .v-tabs-bar {
     .tabs_side {
@@ -1453,14 +1535,20 @@
     }
   }
 }
-.myOrders{
-  .orders_items{
-    .top_table{
-      .topTable_holder{
-        .th_elements{}
-
+.myOrders {
+  tr {
+    background-color: #f1f1f1;
+    th {
+      background-color: white;
+    }
+  }
+  .orders_items {
+    .top_table {
+      .topTable_holder {
+        .th_elements {
+        }
       }
-      .devider{
+      .devider {
         width: 874px;
         border: 1px Solid #f1f1f1;
       }
