@@ -930,6 +930,7 @@
         display: flex;
         .holder_pOne {
           .holder_title {
+            margin-bottom: 6px;
             //styleName: Paragraph/M-16px;
             font-family: Inter;
             font-size: 16px;
@@ -948,6 +949,8 @@
         }
         .holder_pTwo {
           .holder_title {
+            margin-bottom: 6px;
+
             //styleName: Paragraph/M-16px;
             font-family: Inter;
             font-size: 16px;
@@ -986,6 +989,73 @@
     }
   }
   .choSecTwo {
+    .Os_titleHolder {
+      .or_title {
+        //styleName: Heading/S-20px;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .sectwo_devider {
+        border: 1px solid #f1f1f1;
+        width: 411px;
+      }
+    }
+    .mCst_details {
+      width: 411px;
+      height: 273;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .mCst_detailsContainer {
+        width: 411px;
+        height: 273;
+        display: flex;
+        justify-content: space-between;
+        .mCst_detailsTxt {
+          //styleName: Paragraph/M-16px;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #626262;
+        }
+        .mCst_detailsNum {
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: right;
+          color: #171520;
+        }
+      }
+    }
+    .Tot {
+      justify-content: space-between;
+      width: 411px;
+      .tot_txt {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .tot_num {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: right;
+      }
+    }
   }
 }
 .userProfile {
