@@ -8,7 +8,7 @@
         {{ oreder.title }}
       </v-tab>
 
-      <v-tab-item v-for="(oreder, index) in oreders" :key="index">
+      <v-tab-item  v-for="(oreder, index) in oreders" :key="index">
         <v-data-table
         hide-default-footer
           :headers="oreder.headers"
@@ -18,7 +18,7 @@
           show-select
         >
           <template v-slot:[`item.actions`]="{item}">
-            <v-icon small class="mr-2" >
+            <v-icon large color="black" class="mr-2" >
               mdi-chevron-right
               {{item}}
             </v-icon>
