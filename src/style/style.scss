@@ -5,31 +5,19 @@
     max-width: 1280px;
   }
 }
-.nav_bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-
-  .nav_logo {
-  }
-  .nav_headers {
-    display: flex;
-    flex-direction: row;
-    height: 20px;
-    gap: 50px;
-    .header_line {
-    }
-  }
-  .search_container {
-  }
-  .nicon_group {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    .nav_icon {
-    }
+header{
+.v-toolbar{
+.v-toolbar__content{
+  .tool_title{
+    color: #17494D;
+    font-size: 50px;
   }
 }
+}
+}
+.txt_field{
+}
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -1621,6 +1609,80 @@
       .devider {
         width: 874px;
         border: 1px Solid #f1f1f1;
+      }
+    }
+  }
+}
+.ch_payment{
+  .payment_sectionOne{
+    
+  }
+  .payment_sectionTwo {
+    .Os_titleHolder {
+      .or_title {
+        //styleName: Heading/S-20px;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .sectwo_devider {
+        border: 1px solid #f1f1f1;
+        width: 411px;
+      }
+    }
+    .mCst_details {
+      width: 411px;
+      height: 273;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .mCst_detailsContainer {
+        width: 411px;
+        height: 273;
+        display: flex;
+        justify-content: space-between;
+        .mCst_detailsTxt {
+          //styleName: Paragraph/M-16px;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #626262;
+        }
+        .mCst_detailsNum {
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: right;
+          color: #171520;
+        }
+      }
+    }
+    .Tot {
+      justify-content: space-between;
+      width: 411px;
+      .tot_txt {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      .tot_num {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: right;
       }
     }
   }
