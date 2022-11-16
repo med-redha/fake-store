@@ -53,8 +53,8 @@
           label="Select Payment Method"
         ></v-select></div>
           <div class="secPartOne_btnGrp">
-            <v-btn color="#1B4B66" height="44" width="136" text><span>Back to Cart</span></v-btn>
-            <v-btn depressed height="44" width="136" color="#1B4B66" dark><span>Next</span></v-btn>
+            <v-btn color="#1B4B66" height="44" width="136" text to="/mycart"><span>Back to Cart</span></v-btn>
+            <v-btn depressed height="44" width="136" color="#1B4B66" dark to="/payment"><span>Next</span></v-btn>
           </div>
         </div>
       </div>
