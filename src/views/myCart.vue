@@ -65,8 +65,8 @@
               <div class="tot_num"> {{tot.content}}</div>
             </div>
             <div class="mCst_btnGrp">
-              <v-btn class="mCst_btnOne mr-6" depressed><span class="btn_span">Place Order</span></v-btn>
-              <v-btn class="mCst_btnTwo " outlined><span class="btn_span">Continue Shopping</span> </v-btn>
+              <v-btn class="mCst_btnOne mr-6" depressed to="/checkout"><span class="btn_span">Place Order</span></v-btn>
+              <v-btn class="mCst_btnTwo " outlined to="/product"><span class="btn_span">Continue Shopping</span> </v-btn>
             </div>
           </div>
         </v-col>
