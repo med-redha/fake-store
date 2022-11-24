@@ -5,17 +5,17 @@
     max-width: 1280px;
   }
 }
-header{
-.v-toolbar{
-.v-toolbar__content{
-  .tool_title{
-    color: #17494D;
-    font-size: 50px;
+header {
+  .v-toolbar {
+    .v-toolbar__content {
+      .tool_title {
+        color: #17494d;
+        font-size: 50px;
+      }
+    }
   }
 }
-}
-}
-.txt_field{
+.txt_field {
 }
 
 .footer {
@@ -1613,10 +1613,164 @@ header{
     }
   }
 }
-.ch_payment{
-  .payment_sectionOne{
-    
+.ch_payment {
+  .pageTitle {
+    color: #1b4b66;
+    //styleName: Heading/S-34px;
+    font-family: Inter;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
   }
+  .payment_sectionOne {
+    .payment_cardsContainer {
+      display: flex;
+    }
+
+    .paymentDetails_card {
+      display: flex;
+      flex-direction: column;
+      width: 750px;
+      height: 445px;
+      border: 2px solid black;
+      border-radius: 4px;
+      padding: 4px;
+
+      .pdc_partOne {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f1f1f1;
+        border-radius: 4px;
+        padding: 2px;
+        .rad_holder {
+          display: flex;
+          align-items: center;
+        }
+        .pdc_section {
+          display: flex;
+          flex-direction: column;
+          padding: 4px;
+          .pdc_topSection {
+            display: flex;
+            align-items: center;
+            .pdc_imgHolder {
+              .pdc_img {
+                width: 68px;
+                height: 69px;
+                border: 1px solid black;
+                border-radius: 6px;
+                box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                background-color: white;
+              }
+            }
+            .pdc_title {
+              //styleName: Paragraph/M-16px;
+              font-family: Inter;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 20px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+          }
+          .pdcbtm_section {
+            .pdc_input {
+              background-color: white;
+              border: 1px solid black;
+              padding: 4px;
+              border-radius: 2px;
+              height: 40px;
+              width: 287px;
+            }
+            .exmpl_txt {
+              //styleName: Caption/M-12px;
+              font-family: Inter;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 18px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: #a7a7a7;
+            }
+            .check_holder {
+            }
+          }
+        }
+      }
+    }
+    .pdc_partTwo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px;
+      .part_twoOne {
+        display: flex;
+        align-items: center;
+        padding: 2px;
+        .pdc_twoImgholder {
+          .pe_img {
+            width: 68px;
+            height: 69px;
+            box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+            border: 1px solid black;
+            border-radius: 8px;
+          }
+        }
+        .title_txt {
+          //styleName: Paragraph/M-16px;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+      .radio_holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .pdc_partThree {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px;
+      .part_left {
+        display: flex;
+        align-items: center;
+        padding: 2px;
+        .pt_imgHolder {
+          .pt_img {
+            width: 68px;
+            height: 69px;
+            border: 1px solid;
+            border-radius: 8px;
+            box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+          }
+        }
+        .ptitle_txt {
+          //styleName: Paragraph/M-16px;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+      .part_right {
+      }
+    }
+    .pay_btnGrp {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
   .payment_sectionTwo {
     .Os_titleHolder {
       .or_title {
@@ -1684,6 +1838,155 @@ header{
         letter-spacing: 0em;
         text-align: right;
       }
+    }
+  }
+}
+.paymentCard {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  height: 143px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  .checkbox_holder {
+    display: flex;
+    width: 150px;
+    justify-content: flex-end;
+  }
+  .img_holder {
+    width: 131px;
+    height: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .pay_img {
+      width: 138px;
+      height: 38px;
+    }
+  }
+  .title_txt {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.order {
+  .orderDetails {
+    .od_upperSection {
+      .top_table {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .tt_right {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          width: 300px;
+        }
+      }
+
+      .odt_title {
+        //styleName: Paragraph/M-16px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #626262;
+      }
+      .devider {
+        width: 3000px;
+        border: 1px solid #0000001f;
+      }
+      .od_upperTwo{
+        display: flex;
+        justify-content: space-between;
+        .comp_Holder{}
+        .bt_right{
+          display: flex;
+          width: 300px;
+          justify-content: space-evenly;
+          .bt_title{}
+        }
+      }
+    }
+    .odbuttom_section{
+      .head_devide{
+        display: flex;
+        flex-direction: column;
+        .header_txt{
+             //styleName: Heading/S-20px;
+             font-family: Inter;
+             font-size: 20px;
+             font-weight: 600;
+             line-height: 26px;
+             letter-spacing: 0em;
+             text-align: left;
+        }
+      }
+      .odb_left{
+        .mCst_details {
+          width: 411px;
+          height: 273;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .mCst_detailsContainer {
+            width: 411px;
+            height: 273;
+            display: flex;
+            justify-content: space-between;
+            .mCst_detailsTxt {
+              //styleName: Paragraph/M-16px;
+              font-family: Inter;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 20px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: #626262;
+            }
+            .mCst_detailsNum {
+              font-family: Inter;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 18px;
+              letter-spacing: 0em;
+              text-align: right;
+              color: #171520;
+            }
+          }
+        }
+        .Tot {
+          justify-content: space-between;
+          width: 411px;
+          .tot_txt {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          .tot_num {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: right;
+          }
+        }
+      }
+      .odb_mid{}
+      .odb_right{}
     }
   }
 }
