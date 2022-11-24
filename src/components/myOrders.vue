@@ -18,10 +18,12 @@
           show-select
         >
           <template v-slot:[`item.actions`]="{item}">
-            <v-icon large color="black" class="mr-2" >
+           <v-btn icon to="/order" >
+            <v-icon large color="black"   >
               mdi-chevron-right
               {{item}}
             </v-icon>
+           </v-btn>
           </template>
          
         </v-data-table>

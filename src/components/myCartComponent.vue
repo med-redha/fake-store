@@ -10,7 +10,6 @@
         <div class="mCc_subhead">{{ comp.subhead }}</div>
       </div>
     </div>
-   
   </div>
 </template>
 
