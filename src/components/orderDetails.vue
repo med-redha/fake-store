@@ -1,5 +1,6 @@
 <template>
-  <div class="order">
+  <div class="order mr-2 mb-6">
+    <v-icon @click="order()" large class="my-4">mdi-chevron-left</v-icon>
     <v-tabs
       v-model="tab"
       background-color="#f1f1f1"
@@ -17,14 +18,14 @@
         v-for="item in items"
         :key="item.tab"
       >
-        <div class="orderDetails">
+        <div class="orderDetails mr-2">
           <div class="od_upperSection">
             <div class="top_table">
-              <div class="odt_title">prod</div>
+              <div class="odt_title">{{topTable.title}}</div>
               <div class="tt_right">
-                <div class="odt_title">p</div>
-                <div class="odt_title">r</div>
-                <div class="odt_title">c</div>
+                <div class="odt_title">{{topTable.pr}}</div>
+                <div class="odt_title">{{topTable.quan}}</div>
+                <div class="odt_title">{{topTable.sub}}</div>
               </div>
             
             </div>
@@ -38,9 +39,9 @@
                 />
                 </div>
                 <div class="bt_right my-2">
-                  <div class="bt_title">1</div>
-                  <div class="bt_title">2</div>
-                  <div class="bt_title">3</div>
+                  <div class="bt_title mr-1">{{topTable.price}}</div>
+                  <div class="bt_title">{{topTable.quantity}}</div>
+                  <div class="bt_title">{{topTable.subtotal}}</div>
                 </div>
               </div>
           </div>
@@ -49,22 +50,42 @@
                 <div class="header_txt mb-2">Order Summary</div>
                 <v-divider></v-divider>
               </div>
+              <div class="btmsec_container">
               <div class="odb_left">
-                <div class="mCst_details my-4" >
-              <div class="mCst_detailsContainer my-2" v-for="(txt,index) in sectionTwoTxt" :key="index">
-                <div class="mCst_detailsTxt"> {{txt.title}}</div>
-              <div class="mCst_detailsNum"> {{txt.content}}</div>
+                <div class="mCst_details " >
+              <div class="mCst_detailsContainer " v-for="(txt,index) in sectionTwoTxt" :key="index">
+                <div class="mCst_detailsTxt mb-2"> {{txt.title}}</div>
+              <div class="mCst_detailsNum my-2"> {{txt.content}}</div>
               </div>
               
             </div>
-            <div class="Tot d-flex mb-6" v-for="(tot, i) in Total" :key="i">
+            <div class="Tot d-flex my-4" v-for="(tot, i) in Total" :key="i">
               <div class="tot_txt"> {{tot.title}}</div>
               <div class="tot_num"> {{tot.content}}</div>
             </div>
 
               </div>
-              <div class="odb_mid"></div>
-              <div class="odb_right"></div>
+              <div class="odb_mid">
+                <div class="odbm_title">{{middleSide.title}}</div>
+                <div class="odbm_subt">{{middleSide.subtitle}}</div>
+              </div>
+              <div class="odb_right mr-6">
+                <div class="odbr_title">{{rightSide.title}}</div>
+                <div class="odb_adrss">
+                <div class="odbr_combo">
+                  <div class="odbr_sub">{{rightSide.subtitle}}</div>
+                  <v-btn  depressed>{{rightSide.btnOne}}</v-btn>
+                </div>
+                <div class="odbr_sub my-3">{{rightSide.street}}</div>
+                <div class="odbr_sub my-3">{{rightSide.state}}</div>
+                <div class="odbr_sub my-3">{{rightSide.phonenum}}</div>
+              </div>
+                <div class="odbr_btnGroupe mb-2  mt-8">
+                  <v-btn depressed color="#1B4B66" dark width="136" height="44" class="mr-6" >{{rightSide.btnTwo}}</v-btn>
+                  <v-btn outlined color="#1B4B66" width="136" height="44">{{rightSide.btnThree}}</v-btn>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </v-tab-item>
@@ -76,11 +97,13 @@
 import MyCartComponent from './myCartComponent.vue';
 import cImg from "../assets/arrivals/bagFour.jpg";
 export default {
+  name:'orderDetails',
   components:{
     MyCartComponent,
   },
   data () {
       return {
+        awsome:false,
         tab: null,
         items: [
           { tab: 'Items Ordered', content: 'Tab 1 Content' },
@@ -94,6 +117,15 @@ export default {
           title: "Coach",
           subtitle: "Leather Coach Bag",
         },],
+        topTable:{
+            title:"Product Name",
+            pr:"price",
+            quan:"Qty",
+            sub:"Subtotal",
+            price:"$54.69",
+            quantity:"2",
+            subtotal:"$109.38",
+        },
         sectionTwoTxt:[
         {
           title: 'sub Total',
@@ -115,8 +147,30 @@ export default {
           content: '$106.29',
         },
        ],
+       rightSide:{
+        title:"Address Details",
+        subtitle:"Vincent Lobo",
+        btnOne: "Home",
+        street:"3068  Woodlawn Drive",
+        state:"Milwaukee",
+        phonenum:"414-672-5388",
+        btnTwo:"Reorder",
+        btnThree:"Add Rating",
+       },
+       middleSide:{
+        
+          title:"Payment Details",
+          subtitle:"Cash on Delivery",
+        
+      },
       }
+
     },
+    methods:{
+      order(){
+        this.$emit("orders")
+      }
+    }
 
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="myOrders" :oreders="oreders">
+  <div class="myOrders " :oreders="oreders">
     <v-toolbar flat color="primary" dark>
       <v-toolbar-title>My Orders</v-toolbar-title>
     </v-toolbar>
@@ -18,7 +18,7 @@
           show-select
         >
           <template v-slot:[`item.actions`]="{item}">
-           <v-btn icon to="/order" >
+           <v-btn icon @click="order()" >
             <v-icon large color="black"   >
               mdi-chevron-right
               {{item}}
@@ -42,7 +42,12 @@ export default {
     return{
       selected: [],
     }
-  }
+  },
+  methods:{
+    order(){
+      this.$emit("orders")
+    }
+  },
 };
 </script>
 
