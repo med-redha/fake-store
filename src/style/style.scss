@@ -6,8 +6,12 @@
   }
 }
 header {
+
   .v-toolbar {
     .v-toolbar__content {
+      .tab_wrapper{
+        max-width: 500px;
+      }
       .tool_title {
         color: #17494d;
         font-size: 50px;
@@ -17,39 +21,61 @@ header {
 }
 .txt_field {
 }
-
 .footer {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
+  justify-content: space-around;
+  
+  .leftFooter_holder {
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    .footer_left {
+      display: flex;
+      flex-direction: column;
 
-  .left_foot {
-    .leftfot_container {
-      .leftft_title {
+      .list_title {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
       }
-      .ft_subclmns {
-        .left_subtitle {
+      .subtitle_holder {
+        .list_subtitles {
+          color: #b6b6b6;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: left;
         }
       }
     }
   }
-  .right_foot {
+  .rightFooter_holder{
+    width: 550px;
+    display: flex;
+    justify-content: flex-end;
+  .footer_right{
     display: flex;
     flex-direction: column;
-    .icon_group {
-    }
-    .right_local {
+    .icon_holder{
       display: flex;
-      flex-direction: row;
-      .local_icon {
-      }
-      .placment {
-      }
+      justify-content: flex-end;
     }
-    .copyright {
+    .location{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .location_txt{}
     }
+    .copyR{}
   }
 }
+}
+
 .home {
   .banner_container {
     display: flex;
@@ -1883,18 +1909,30 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .odt_title {
+        }
         .tt_right {
           display: flex;
           justify-content: space-evenly;
           align-items: center;
           width: 300px;
+          .odt_title {
+            //styleName: Paragraph/M-16px;
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #626262;
+          }
         }
       }
 
       .odt_title {
         //styleName: Paragraph/M-16px;
         font-family: Inter;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 500;
         line-height: 20px;
         letter-spacing: 0em;
@@ -1902,48 +1940,147 @@ header {
         color: #626262;
       }
       .devider {
-        width: 3000px;
         border: 1px solid #0000001f;
       }
-      .od_upperTwo{
+      .od_upperTwo {
         display: flex;
         justify-content: space-between;
-        .comp_Holder{}
-        .bt_right{
+        .comp_Holder {
+        }
+        .bt_right {
           display: flex;
           width: 300px;
           justify-content: space-evenly;
-          .bt_title{}
+          .bt_title {
+          }
         }
       }
     }
-    .odbuttom_section{
-      .head_devide{
+    .odbuttom_section {
+      .head_devide {
         display: flex;
         flex-direction: column;
-        .header_txt{
-             //styleName: Heading/S-20px;
-             font-family: Inter;
-             font-size: 20px;
-             font-weight: 600;
-             line-height: 26px;
-             letter-spacing: 0em;
-             text-align: left;
+        .header_txt {
+          //styleName: Heading/S-20px;
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 26px;
+          letter-spacing: 0em;
+          text-align: left;
         }
       }
-      .odb_left{
-        .mCst_details {
-          width: 411px;
-          height: 273;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          .mCst_detailsContainer {
+      .btmsec_container {
+        display: flex;
+        justify-content: space-between;
+        .odb_left {
+          .mCst_details {
             width: 411px;
             height: 273;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
-            .mCst_detailsTxt {
+            .mCst_detailsContainer {
+              width: 411px;
+              height: 273;
+              display: flex;
+              justify-content: space-between;
+              .mCst_detailsTxt {
+                //styleName: Paragraph/M-16px;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #626262;
+              }
+              .mCst_detailsNum {
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: right;
+                color: #171520;
+              }
+            }
+          }
+          .Tot {
+            justify-content: space-between;
+            width: 411px;
+            .tot_txt {
+              font-family: Inter;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 20px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+            .tot_num {
+              font-family: Inter;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 20px;
+              letter-spacing: 0em;
+              text-align: right;
+            }
+          }
+        }
+        .odb_mid {
+          .odbm_title {
+            color: #626262;
+            //styleName: Paragraph/M-16px;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          .odbm_subt {
+            //styleName: Paragraph/M-16px;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+        .odb_right {
+          display: flex;
+          flex-direction: column;
+
+          width: 260px;
+          .odbr_title {
+            //styleName: Paragraph/M-16px;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #626262;
+          }
+          .odb_adrss {
+            display: flex;
+            flex-direction: column;
+            .odbr_combo {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .odbr_sub {
+                //styleName: Paragraph/M-16px;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0em;
+                text-align: left;
+              }
+            }
+            .odbr_sub {
               //styleName: Paragraph/M-16px;
               font-family: Inter;
               font-size: 16px;
@@ -1951,42 +2088,15 @@ header {
               line-height: 20px;
               letter-spacing: 0em;
               text-align: left;
-              color: #626262;
-            }
-            .mCst_detailsNum {
-              font-family: Inter;
-              font-size: 16px;
-              font-weight: 500;
-              line-height: 18px;
-              letter-spacing: 0em;
-              text-align: right;
-              color: #171520;
             }
           }
-        }
-        .Tot {
-          justify-content: space-between;
-          width: 411px;
-          .tot_txt {
-            font-family: Inter;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 20px;
-            letter-spacing: 0em;
-            text-align: left;
-          }
-          .tot_num {
-            font-family: Inter;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 20px;
-            letter-spacing: 0em;
-            text-align: right;
+          .odbr_btnGroupe {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
           }
         }
       }
-      .odb_mid{}
-      .odb_right{}
     }
   }
 }
