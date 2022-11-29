@@ -138,8 +138,9 @@
         </v-tab-item>
         <v-tab-item> hello </v-tab-item>
         <v-tab-item>
-          <div>
-            <my-orders :oreders="Oreders" />
+          <div class="ml-2">
+            <my-orders :oreders="Oreders" v-if="orders == false" @orders="orders = true" />
+            <order-details @orders="orders = false" v-else />
           </div>
         </v-tab-item>
       </v-tabs>
@@ -149,13 +150,16 @@
 
 <script>
 import MyOrders from "../components/myOrders.vue";
+import OrderDetails from "../components/orderDetails.vue";
 export default {
   name: "userProfile",
   components: {
     MyOrders,
+    OrderDetails,
   },
   data() {
     return {
+      orders: false,
       Oreders: [
         {
           title: "completed",
