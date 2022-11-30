@@ -38,9 +38,9 @@
                   :comp="s"
                 />
                 </div>
-                <div class="bt_right my-2">
+                <div class="bt_right my-3 mr-1">
                   <div class="bt_title mr-1">{{topTable.price}}</div>
-                  <div class="bt_title">{{topTable.quantity}}</div>
+                  <div class="bt_title mr-3">{{topTable.quantity}}</div>
                   <div class="bt_title">{{topTable.subtotal}}</div>
                 </div>
               </div>

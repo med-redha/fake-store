@@ -10,10 +10,8 @@
         </v-img>
       </div>
     </div>
-    <div class="category_bread">
-      <v-breadcrumbs divider=">"></v-breadcrumbs>
-    </div>
-    <div class="category_headContainer">Handbags</div>
+    
+    <div class="category_headContainer mt-8">Handbags</div>
     <v-row>
       <v-col cols="3" class="my-10">
         <v-expansion-panels class="mb-6">
@@ -72,7 +70,7 @@
               <category-display :display="display" />
             </v-col>
           </v-row>
-          <div class="category_pagination" sub>
+          <div  sub>
             <div class="text-center">
               <v-pagination v-model="page" :length="4"></v-pagination>
             </div>

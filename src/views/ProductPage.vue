@@ -1,6 +1,6 @@
 <template>
   <div class="product">
-    <div class="bread my-8"></div>
+    <div class="my-8"></div>
     <v-row>
       <v-col>
         <div class="display_container">

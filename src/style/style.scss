@@ -6,10 +6,9 @@
   }
 }
 header {
-
   .v-toolbar {
     .v-toolbar__content {
-      .tab_wrapper{
+      .tab_wrapper {
         max-width: 500px;
       }
       .tool_title {
@@ -19,12 +18,10 @@ header {
     }
   }
 }
-.txt_field {
-}
 .footer {
   display: flex;
   justify-content: space-around;
-  
+
   .leftFooter_holder {
     display: flex;
     justify-content: space-between;
@@ -54,36 +51,67 @@ header {
       }
     }
   }
-  .rightFooter_holder{
+  .rightFooter_holder {
     width: 550px;
     display: flex;
     justify-content: flex-end;
-  .footer_right{
-    display: flex;
-    flex-direction: column;
-    .icon_holder{
+    .footer_right {
       display: flex;
-      justify-content: flex-end;
+      flex-direction: column;
+      .icon_holder {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .location {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .location_txt {
+          //styleName: Heading/M-14px;
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+      .copyR {
+        //styleName: Heading/M-14px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: #b6b6b6;
+      }
     }
-    .location{
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      .location_txt{}
-    }
-    .copyR{}
   }
-}
 }
 
 .home {
   .banner_container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     height: 50px;
     text-align: center;
     background-color: rgba(240, 240, 240, 1);
     .banner_text {
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: center;
+
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: center;
     }
   }
   .home_hero {
@@ -163,8 +191,7 @@ header {
         text-align: left;
       }
       .titleBtn_holder {
-        .title_btn {
-        }
+        display: flex;
       }
     }
     .homecardOne_container {
@@ -208,6 +235,8 @@ header {
       text-align: left;
     }
     .cardThree_container {
+      display: flex;
+      justify-content: space-between;
     }
   }
   .homeSection_four {
@@ -294,8 +323,7 @@ header {
       }
     }
   }
-  .category_bread {
-  }
+
   .category_headContainer {
     //styleName: Heading/S-34px;
     font-family: Inter;
@@ -355,17 +383,13 @@ header {
         align-items: center;
       }
     }
-    .category_pagination {
-    }
+
     .sub {
       text-align: center;
     }
   }
 }
 .product {
-  .bread {
-  }
-
   .display_container {
     .productDisplay_mainHolder {
       display: flex;
@@ -675,6 +699,7 @@ header {
         line-height: 61px;
         letter-spacing: 4.545454025268555px;
         text-align: left;
+        color: #a7a7a7;
       }
       .abhero_sub {
         font-family: Inter;
@@ -683,6 +708,7 @@ header {
         line-height: 20px;
         letter-spacing: 0px;
         text-align: left;
+        color: #a7a7a7;
       }
     }
   }
@@ -1265,8 +1291,6 @@ header {
         height: 52px;
         border-radius: 4px;
         padding: 3px;
-        .inp_icn {
-        }
       }
     }
   }
@@ -1316,6 +1340,8 @@ header {
         text-align: left;
       }
       .nA_headerIconHolder {
+        display: flex;
+        align-items: center;
       }
     }
     .newArrival_subtitle {
@@ -1408,10 +1434,6 @@ header {
           line-height: 52px;
           letter-spacing: 0em;
           text-align: right;
-        }
-        .skinCare_btnholder {
-          .skinCare_btn {
-          }
         }
       }
     }
@@ -1624,18 +1646,6 @@ header {
     background-color: #f1f1f1;
     th {
       background-color: white;
-    }
-  }
-  .orders_items {
-    .top_table {
-      .topTable_holder {
-        .th_elements {
-        }
-      }
-      .devider {
-        width: 874px;
-        border: 1px Solid #f1f1f1;
-      }
     }
   }
 }
@@ -1910,6 +1920,14 @@ header {
         justify-content: space-between;
         align-items: center;
         .odt_title {
+          //styleName: Paragraph/M-16px;
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #626262;
         }
         .tt_right {
           display: flex;
@@ -1952,6 +1970,12 @@ header {
           width: 300px;
           justify-content: space-evenly;
           .bt_title {
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
           }
         }
       }

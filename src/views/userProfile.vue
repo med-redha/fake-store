@@ -115,7 +115,7 @@
                     class="inp_two ml-8"
                     placeholder="new password"
                   />
-                  <v-btn depressed color="#f1f1f1" class="inp_icn" height="52px"
+                  <v-btn depressed color="#f1f1f1" height="52px"
                     ><v-icon small color="">mdi-eye-outline</v-icon></v-btn
                   >
                 </div>
@@ -139,7 +139,11 @@
         <v-tab-item> hello </v-tab-item>
         <v-tab-item>
           <div class="ml-2">
-            <my-orders :oreders="Oreders" v-if="orders == false" @orders="orders = true" />
+            <my-orders
+              :oreders="Oreders"
+              v-if="orders == false"
+              @orders="orders = true"
+            />
             <order-details @orders="orders = false" v-else />
           </div>
         </v-tab-item>

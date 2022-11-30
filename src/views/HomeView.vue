@@ -18,7 +18,7 @@
       <div class="sectionOne_header">
         <div class="section_title">New Arrivals</div>
         <div class="titleBtn_holder">
-          <v-btn class="title_btn" text>veiw all <v-icon>mdi-arrow-right</v-icon>
+          <v-btn   color="#1b4b66"  text>veiw all <v-icon small>mdi-arrow-right</v-icon>
           </v-btn>
         </div>
       </div>
@@ -39,7 +39,7 @@
       <div class="secThree_titlecn">
         <div class="section_title">Shop by Brands</div>
       </div>
-      <div class="cardThree_container d-flex justify-space-between">
+      <div class="cardThree_container ">
         <brands v-for="(brd, index) in brand " :key="index" :brd="brd" />
       </div>
     </div>
