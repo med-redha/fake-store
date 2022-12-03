@@ -1,8 +1,8 @@
 <template>
   <div class="paymentCard" :pay="pay">
     <div class="checkbox_holder">
-      <v-radio-group v-model="radios" >
-        <v-radio label="" value="radio-1" v-on:click="googlePlay"></v-radio>
+      <v-radio-group v-model="radios">
+        <v-radio label="" value="radio-1"></v-radio>
       </v-radio-group>
     </div>
     <div class="img_holder">

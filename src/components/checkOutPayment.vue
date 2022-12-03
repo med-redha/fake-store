@@ -11,11 +11,10 @@
               v-for="(l, index) in payCards"
               :key="index"
               :pay="l"
-              @click ="googlePlay"
               class="mr-6 mb-6"
             />
           </div>
-          <div class="paymentDetails_card my-4" v-if="googlePlay == false">
+          <div class="paymentDetails_card my-4">
             <div class="pdc_partOne">
               <div class="pdc_section">
                 <div class="pdc_topSection">
@@ -75,8 +74,14 @@
             <v-btn height="44" width="136" color="#1b4b66" text to="/checkout"
               ><span>Back to Cart</span></v-btn
             >
-            <v-btn depressed dark color="#1b4b66" height="44" width="136"
-              to="/order" ><span>Next</span></v-btn
+            <v-btn
+              depressed
+              dark
+              color="#1b4b66"
+              height="44"
+              width="136"
+              to="/order"
+              ><span>Next</span></v-btn
             >
           </div>
         </div>
@@ -133,7 +138,6 @@ export default {
   },
   data() {
     return {
-      googlePlay: false,
       radios: null,
       payCards: [
         {
