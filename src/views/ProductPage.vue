@@ -105,6 +105,7 @@
               color="#1b4b66"
               width="240px"
               height="44px"
+              to="/myCart"
             >
               <v-icon color="white">mdi-basket-check-outline</v-icon>
               <span class="v-btn__content">Add to bag</span>

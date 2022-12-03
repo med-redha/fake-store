@@ -1,20 +1,20 @@
 <template>
   <v-app>
     <v-container>
-      <v-app-bar color="white" dense  rounded="" flat height="80px">
-        <v-btn to="/" text color="#17494D" icon x-large>CORA'L</v-btn>
+      <v-app-bar color="#8b6c5c" dense dark rounded="" flat height="80px">
+        <v-btn to="/" text color="white" class="ml-4" icon x-large>CORA'L</v-btn>
         <div class="tab_wrapper">
-          <v-tabs hide-slider fixed-tabs color="black" height="80px"  class="ml-10">
-          <v-tab to="/category">Handbags</v-tab>
+          <v-tabs hide-slider fixed-tabs color="black" height="40px"  class="ml-10" background-color="#8b6c5c">
+          <v-tab to="/category">Categories</v-tab>
           <v-tab to="/product">Watches</v-tab>
           <v-tab>Skincare</v-tab>
           <v-tab>Jewellery</v-tab>
-          <v-tab>Apparels</v-tab>
+          <v-tab to="/about">About Us</v-tab>
         </v-tabs>
         </div>
         <v-spacer></v-spacer>
         <v-text-field
-          background-color="#f1f1f1"
+          background-color="#bca89f"
           placeholder="Search for products or brands..."
           rounded
           hide-details
@@ -27,11 +27,11 @@
         <v-btn icon>
           <v-icon>mdi-heart-outline</v-icon>
         </v-btn>
-        <v-btn icon color="black" to="/userProfile">
+        <v-btn icon color="white" to="/userProfile">
           <v-icon>mdi-account</v-icon>
         </v-btn>
-        <v-btn icon color="black">
-          <v-icon>mdi-basket-check-outline</v-icon>
+        <v-btn icon color="white" to="myCart">
+          <v-icon >mdi-basket-check-outline</v-icon>
         </v-btn>
       </v-app-bar>
       <v-main>

@@ -80,7 +80,7 @@
               color="#1b4b66"
               height="44"
               width="136"
-              to="/order"
+              to="/userProfile"
               ><span>Next</span></v-btn
             >
           </div>

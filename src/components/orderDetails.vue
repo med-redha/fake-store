@@ -81,7 +81,7 @@
                 <div class="odbr_sub my-3">{{rightSide.phonenum}}</div>
               </div>
                 <div class="odbr_btnGroupe mb-2  mt-8">
-                  <v-btn depressed color="#1B4B66" dark width="136" height="44" class="mr-6" >{{rightSide.btnTwo}}</v-btn>
+                  <v-btn depressed color="#1B4B66" dark width="136" height="44" class="mr-6"  to="/category">{{rightSide.btnTwo}}</v-btn>
                   <v-btn outlined color="#1B4B66" width="136" height="44">{{rightSide.btnThree}}</v-btn>
                 </div>
               </div>

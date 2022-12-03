@@ -2,9 +2,9 @@
   <div class="userProfile">
     <v-card>
       <v-toolbar flat>
-        <v-toolbar-title>User Profile</v-toolbar-title>
+        <v-toolbar-title class="d-flex align-center "><v-btn icon to="/"><v-icon>mdi-chevron-left</v-icon></v-btn> <span>User Profile</span></v-toolbar-title>
       </v-toolbar>
-      <v-tabs vertical background-color="#F1F1F1">
+      <v-tabs vertical background-color="#F1F1F1" height="404px" class="mt-8">
         <v-tab class="mb-3">
           <span class="tabs_side">Personal Information</span>
           <v-spacer></v-spacer> <v-icon large>mdi-chevron-right</v-icon></v-tab
