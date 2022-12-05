@@ -1,7 +1,8 @@
 <template>
+  <v-hover v-slot="{hover}">
   <div class="skinCare my-10" :skin="skin">
     <div class="skinCare_imgHolder">
-      <v-img class="skinCare_img" :src="skin.img" alt="">
+      <v-img class="skinCare_img" :src="skin.img" alt="" :class="hover ? 'skin_hover' : ''">
         <div class="skinCareTxt_holder">
           <div class="skinCare_txt">{{ skin.header }}</div>
 
@@ -12,6 +13,7 @@
       </v-img>
     </div>
   </div>
+</v-hover>
 </template>
 
 <script>

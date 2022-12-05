@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <v-container>
-      <v-app-bar color="#8b6c5c" dense dark rounded="" flat height="80px">
+      <v-app-bar color="#99E479" dense dark rounded="" flat height="80px">
         <v-btn to="/" text color="white" class="ml-4" icon x-large>CORA'L</v-btn>
         <div class="tab_wrapper">
-          <v-tabs hide-slider fixed-tabs color="black" height="40px"  class="ml-10" background-color="#8b6c5c">
+          <v-tabs hide-slider fixed-tabs color="black" height="40px"  class="ml-10" background-color="#99E479">
           <v-tab to="/category">Categories</v-tab>
           <v-tab to="/product">Watches</v-tab>
           <v-tab>Skincare</v-tab>
@@ -14,7 +14,7 @@
         </div>
         <v-spacer></v-spacer>
         <v-text-field
-          background-color="#bca89f"
+          background-color="#71776C"
           placeholder="Search for products or brands..."
           rounded
           hide-details

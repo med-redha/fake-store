@@ -14,7 +14,7 @@
         </v-btn>
       </div>
     </div>
-    <div class="homeSection_one my-10">
+    <div class="homeSection_one my-10 mx-4">
       <div class="sectionOne_header">
         <div class="section_title">New Arrivals</div>
         <div class="titleBtn_holder">
@@ -39,7 +39,7 @@
       <div class="secThree_titlecn">
         <div class="section_title">Shop by Brands</div>
       </div>
-      <div class="cardThree_container ">
+      <div class="cardThree_container  mx-4">
         <brands v-for="(brd, index) in brand " :key="index" :brd="brd" />
       </div>
     </div>
@@ -55,7 +55,7 @@
         </div>
       
       </div>
-      <div class="cardFour_container d-flex justify-space-between">
+      <div class="cardFour_container d-flex justify-space-between mx-4">
         <skin-care v-for="(skin, index) in skinCar" :key="index" :skin="skin" />
       </div>
     </div>

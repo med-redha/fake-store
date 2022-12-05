@@ -1,7 +1,8 @@
 <template>
-  <div class="newArrival" :arrival="arrival">
+  <v-hover v-slot="{hover}">
+  <div class="newArrival" :arrival="arrival" >
     <div class="newArrival_imgContainer">
-        <img class="newArrival_img" :src="arrival.img" alt="">
+        <img class="newArrival_img" :src="arrival.img" alt="" :class="hover ? 'arrival_hover':''">
     </div>
     <div class="newArrival_textContainer">
         <div class="newArrival_header">
@@ -12,6 +13,7 @@
         <div class="newArrival_price"> {{ arrival.price }} </div>
     </div>
   </div>
+</v-hover>
 </template>
 
 <script>
